@@ -61,7 +61,9 @@ public class Ingredients implements Comparable{
      */
     public double getIngredient(double num){
         if (num <= amount){
-            amount -= num;
+            for (int i = 0; i < num; i++){
+                amount -= 1;
+            }
             return num;
         }
         else{
